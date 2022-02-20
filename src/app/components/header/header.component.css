@@ -1,0 +1,7 @@
+.header-con {
+  background-color: #3a3b3c;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

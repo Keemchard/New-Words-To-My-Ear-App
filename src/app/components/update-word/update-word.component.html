@@ -1,0 +1,73 @@
+<div class="update-main-con">
+  <div class="update-con">
+    <div class="update-header">
+      <h2>Update Word</h2>
+    </div>
+    <div class="updates">
+      <div class="update-word-list" *ngFor="let word of wordVariable">
+        <h2>{{ word.word }}</h2>
+        <p>{{ word.pronounciation }}</p>
+        <p>{{ word.meaning }}</p>
+        <p>{{ word.contributor }}</p>
+
+        <div class="update-form">
+          <div>
+            <input
+              type="text"
+              name="updateWord"
+              [(ngModel)]="updateWord"
+              id="updateWord"
+              placeholder="{{ word.word }}"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="updatePronounciation"
+              [(ngModel)]="updatePronounciation"
+              id="updatePronounciation"
+              placeholder="{{ word.pronounciation }}"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="updateMeaning"
+              [(ngModel)]="updateMeaning"
+              id="updateMeaning"
+              placeholder="{{ word.meaning }}"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="updateContributor"
+              [(ngModel)]="updateContributor"
+              id="updateCotributor"
+              placeholder="{{ word.contributor }}"
+            />
+          </div>
+          <div>
+            <button (click)="updateTheWord(word)" class="update-word">
+              Update Word
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button (click)="hideUpdateForm()" class="close">Close</button>
+  </div>
+</div>
+
+<!-- <div class="update-form">
+        <div>
+          <input type="text" name="updateWord" id="updateWord" />
+        </div>
+        <div>
+          <input type="text" name="updateWord" id="updateWord" />
+        </div>
+        <div>
+          <input type="text" name="updateWord" id="updateWord" />
+        </div>
+        <div><button>Update Word</button></div>
+      </div> -->

@@ -1,0 +1,18 @@
+{
+  "word": [
+    {
+      "word": "TESTING UPDATE",
+      "pronounciation": "test",
+      "meaning": "testing",
+      "contributor": "keemchard",
+      "id": 2
+    },
+    {
+      "word": "new word added",
+      "pronounciation": "asdfasfd",
+      "meaning": "dfdfdf",
+      "contributor": "KC",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+.add-form-main {
+  /* background-color: blue; */
+  padding: 10px;
+}
+
+.add-word-header {
+  background-color: #242526;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.add-form-con {
+  background-color: #242526;
+  padding: 5px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-form-con > div {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px;
+  width: 100%;
+}
+.add-form-con > div input {
+  padding: 10px;
+  border: 1px solid #3a3b3c;
+  background-color: #3a3b3c;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+.add-form-con > div input:hover {
+  background-color: #2374e1;
+  transform: scaleX(1.05);
+}
+
+section input {
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: #2374e1;
+  transition: 0.5s;
+}
+section input:hover {
+  transform: scale(1.1);
+}
+
+.ngmodel-con {
+  height: 90px;
+  background-color: #3a3b3c;
+  width: 94%;
+  padding: 10px;
+  margin-bottom: 3px;
+  overflow-y: scroll;
+}
+
+span {
+  font-weight: bold;
+}

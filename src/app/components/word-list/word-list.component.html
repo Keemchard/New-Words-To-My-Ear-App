@@ -1,0 +1,20 @@
+<div class="word-list-con-main">
+  <div class="word-list-header">
+    <h1>Word Lists</h1>
+    <button (click)="toggleUpdateForm()" class="update-btn">
+      Update a Word
+    </button>
+  </div>
+  <div class="word-list-con">
+    <div class="word-list" *ngFor="let word of wordVariable">
+      <h2>{{ word.word }}</h2>
+      <p>{{ word.pronounciation }}</p>
+      <p style="margin-bottom: 20px">{{ word.meaning }}</p>
+      <div class="contri">
+        <p>-{{ word.contributor }}</p>
+      </div>
+      <button (click)="deleteWord(word)" class="delete-btn">Delete</button>
+    </div>
+  </div>
+</div>
+<app-update-word></app-update-word>

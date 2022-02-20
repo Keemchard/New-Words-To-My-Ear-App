@@ -1,0 +1,46 @@
+<div class="add-form-main">
+  <div class="add-word-header">
+    <h1>Add a Word</h1>
+  </div>
+  <form class="add-form-con" (ngSubmit)="onSubmit()">
+    <div>
+      <label style="margin-bottom: 3px" for="word">Word</label>
+      <input type="text" name="word" [(ngModel)]="word" id="word" />
+    </div>
+    <div>
+      <label style="margin-bottom: 3px" for="pronounciation"
+        >Pronounciation</label
+      >
+      <input
+        type="text"
+        name="pronounciation"
+        [(ngModel)]="pronounciation"
+        id="pronounciation"
+      />
+    </div>
+    <div>
+      <label style="margin-bottom: 3px" for="meaning">Meaning</label>
+      <input type="text" name="meaning" [(ngModel)]="meaning" id="meaning" />
+    </div>
+    <div>
+      <label style="margin-bottom: 3px" for="contributor"
+        >Contributor's Name</label
+      >
+      <input
+        type="text"
+        name="contributor"
+        [(ngModel)]="contributor"
+        id="contributor"
+      />
+    </div>
+    <article class="ngmodel-con">
+      <p><span>Word:</span> {{ word }}</p>
+      <p><span>Pronounciation:</span> {{ pronounciation }}</p>
+      <p><span>Meaning:</span> {{ meaning }}</p>
+      <p><span>Contributor:</span> {{ contributor }}</p>
+    </article>
+    <section>
+      <input type="submit" value="Submit Word" />
+    </section>
+  </form>
+</div>

@@ -1,0 +1,25 @@
+.main-container {
+  height: 100vh;
+  background-color: #18191a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #18191a;
+  padding: 20px;
+  width: 1366px;
+  height: 768px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inside-container {
+  /* background-color: aliceblue; */
+  display: flex;
+  padding: 10px;
+}
+.inside-container > div {
+  flex: 1;
+  background-color: #18191a;
+}

@@ -1,0 +1,78 @@
+.update-main-con {
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.update-con {
+  width: 350px;
+  background-color: #18191a;
+  height: 450px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.updates {
+  overflow-y: scroll;
+  background-color: #242526;
+  height: 340px;
+  width: 100%;
+}
+.update-header {
+  background-color: #3a3b3c;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.update-word-list {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #3a3b3c;
+}
+
+.close {
+  padding: 7px 10px;
+  margin-top: 10px;
+  background-color: #2374e1;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.update-form {
+  margin-top: 10px;
+  background-color: #242526;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.update-form > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.update-form > div input {
+  width: 100%;
+  margin-bottom: 3px;
+  padding: 5px;
+  background-color: #3a3b3c;
+  border: 1px solid #3a3b3c;
+}
+
+.update-word {
+  background-color: #2374e1;
+  padding: 5px;
+  margin: 5px 0px;
+  border: 1px solid black;
+}
